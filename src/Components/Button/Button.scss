@@ -1,0 +1,10 @@
+@use "../../styles/common";
+.btn {
+  border-radius: 8px;
+  font-size: 1.25em;
+  color: common.$color-btnText;
+}
+.btn-primary {
+  background-color: common.$color-add;
+  padding: 16px;
+}
