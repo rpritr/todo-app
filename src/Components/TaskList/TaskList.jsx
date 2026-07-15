@@ -13,7 +13,7 @@ const TaskList = () => {
             setTasks(tasks);
         }
         fetchTasks();
-    },[])
+    })
     return (
         <div className="task-list">
             {tasks.map((task, index) => (

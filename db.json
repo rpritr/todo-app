@@ -20,6 +20,16 @@
     {
       "title": "Test Task",
       "id": "qACMh6_rjzs"
+    },
+    {
+      "title": "Learn CSS",
+      "done": false,
+      "id": "r48dDbDA4AY"
+    },
+    {
+      "title": "test",
+      "done": false,
+      "id": "2ClUhP7-fSE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
