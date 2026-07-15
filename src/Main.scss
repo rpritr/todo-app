@@ -1,0 +1,6 @@
+@use "styles/common";
+body {
+  background: common.$color-bg;
+  color: common.$color-text;
+  font-family: common.$font-main;
+}
