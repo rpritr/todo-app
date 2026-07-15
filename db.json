@@ -1,23 +1,9 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "title": "Learn React Native",
-      "done": false
-    },
-    {
-      "id": "2",
-      "title": "Learn SCSS",
-      "done": false
-    },
-    {
-      "id": "3",
       "title": "Learn HTML",
-      "done": false
-    },
-    {
-      "title": "Test Task",
-      "id": "jWAyfB8JckI"
+      "done": true,
+      "id": "3"
     },
     {
       "title": "Test Task",
@@ -33,24 +19,7 @@
     },
     {
       "title": "Test Task",
-      "id": "JIpl80kpAKE"
-    },
-    {
-      "title": "Test Task",
       "id": "qACMh6_rjzs"
-    },
-    {
-      "title": "Test Task",
-      "id": "-7XzKSYqgjM"
-    },
-    {
-      "title": "123",
-      "id": "LMypgBxLjs8"
-    },
-    {
-      "title": "222",
-      "done": false,
-      "id": "eLsYG1kGTXU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
