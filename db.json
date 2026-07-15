@@ -1,0 +1,57 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Learn React Native",
+      "done": false
+    },
+    {
+      "id": "2",
+      "title": "Learn SCSS",
+      "done": false
+    },
+    {
+      "id": "3",
+      "title": "Learn HTML",
+      "done": false
+    },
+    {
+      "title": "Test Task",
+      "id": "jWAyfB8JckI"
+    },
+    {
+      "title": "Test Task",
+      "id": "Uo-kLZXybpc"
+    },
+    {
+      "title": "Test Task",
+      "id": "1GLVDBCdoos"
+    },
+    {
+      "title": "Test Task",
+      "id": "3EOqnabKnIo"
+    },
+    {
+      "title": "Test Task",
+      "id": "JIpl80kpAKE"
+    },
+    {
+      "title": "Test Task",
+      "id": "qACMh6_rjzs"
+    },
+    {
+      "title": "Test Task",
+      "id": "-7XzKSYqgjM"
+    },
+    {
+      "title": "123",
+      "id": "LMypgBxLjs8"
+    },
+    {
+      "title": "222",
+      "done": false,
+      "id": "eLsYG1kGTXU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

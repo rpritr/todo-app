@@ -3,16 +3,21 @@ import TaskItem from "../TaskItem/TaskItem.jsx";
 import "./TaskList.scss";
 const TaskList = () => {
     const [tasks, setTasks] = useState([]);
+    const url = "http://localhost:3000/tasks";
+
     useEffect(() => {
-        let newTasks = [
-            {name: "Learn React Native", id: 0},
-            {name: "Learn SCSS", id: 1}];
-        setTasks(newTasks);
+
+        const fetchTasks = async () => {
+            const r = await fetch(url, { method: "GET" });
+            const tasks = await r.json();
+            setTasks(tasks);
+        }
+        fetchTasks();
     },[])
     return (
         <div className="task-list">
             {tasks.map((task, index) => (
-                <TaskItem task={task.name} key={index} />
+                <TaskItem task={task.title} key={index} />
             ))}
         </div>
     )
