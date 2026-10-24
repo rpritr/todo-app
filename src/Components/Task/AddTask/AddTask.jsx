@@ -1,29 +1,21 @@
 import "./AddTask.scss";
-import "../../Button/Button.jsx";
 import Button from "../../Button/Button.jsx";
 
-const AddTask = () => {
-    // handle form submit to API
-    const handleSubmit = (e) => {
+const AddTask = ({ onAdd, disabled }) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const form = e.target;
-        const formData = new FormData(form);
-        const title = formData.get("task-title");
-        const url = "http://localhost:3000/tasks";
-        fetch(url, {
-            method: "POST",
-            body: JSON.stringify({
-                title: title,
-                done: false,
-            })
-        });
-        form.reset(); // reset value in input
+        const form = e.currentTarget;
+        const title = String(new FormData(form).get("task-title") ?? "").trim();
+
+        if (title && await onAdd(title)) {
+            form.reset();
+        }
     }
 
     return (
-        <form className="add-task" onSubmit={e => handleSubmit(e)}>
-            <input id="task-title" name="task-title" type="text" placeholder="Add Task" />
-            <Button title="Add Task" classList="btn btn-primary"  />
+        <form className="add-task" onSubmit={handleSubmit}>
+            <input id="task-title" name="task-title" type="text" placeholder="Add Task" required disabled={disabled} />
+            <Button type="submit" title="Add Task" classList="btn btn-primary" disabled={disabled} />
         </form>
     )
 }

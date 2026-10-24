@@ -1,0 +1,21 @@
+{
+  "license": "VBL — Verification Before Assertion License",
+  "version": "10.3.0",
+  "files": [
+    {
+      "path": "REGISTER-NEIMENOVANIH.jsonl",
+      "size": 94,
+      "sha256": "0129c3c3344163248f6d389f497b6edfc0ad1381423defefd4bbbbeaaec2fa0f"
+    },
+    {
+      "path": "REGISTER-PADCEV.jsonl",
+      "size": 85,
+      "sha256": "768ea7b0bb6325dc2f4c3f8696cf4eecff0c63296548eeec5b8e0cbaaedb2418"
+    },
+    {
+      "path": "canon/DOVOLJENJA.md",
+      "size": 659,
+      "sha256": "3054d55e520a382e510d096ac5e1a524a0649b1cedc089578a42a7c328a35e70"
+    }
+  ]
+}
